@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Multi-Brand AI WhatsApp Automation Platform for Edu Alt Tech & Setsuzoku",
   "private": true,
+  "type": "module",
   "workspaces": [
     "backend",
     "frontend"
@@ -10,7 +11,7 @@
   "scripts": {
     "dev": "npm run dev --workspace=backend",
     "dev:frontend": "npm run dev --workspace=frontend",
-    "build": "npm run build --workspace=backend && npm run build --workspace=frontend",
+    "build": "npm run build --workspace=backend && npm run build --workspace=frontend && node scripts/copy-dist.js",
     "test": "npm run test --workspace=backend"
   },
   "keywords": [
